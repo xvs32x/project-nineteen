@@ -35,7 +35,7 @@ export class SignComponent {
   }
 
   submit() {
-    this.store.dispatch(RootActions.markSigned());
+    this.store.dispatch(RootActions.markSigned({ userId: this.form.value.user_id }));
   }
 
 }

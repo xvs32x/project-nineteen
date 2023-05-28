@@ -13,6 +13,11 @@ export const selectIsSigned = createSelector(
   state => state.isSigned,
 )
 
+export const selectUserid = createSelector(
+  selectRoot,
+  state => state.userId,
+)
+
 export const selectMode = createSelector(
   selectRoot,
   state => state.mode,

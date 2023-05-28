@@ -1,0 +1,19 @@
+<tui-island>
+  <p class="tui-island__category">Оффлайн</p>
+  <h3 class="tui-island__title">
+    <span *ngIf="activity.dir1">{{ activity.dir1 }}</span>
+    <span *ngIf="activity.dir2"> | {{ activity.dir2 }}</span>
+  </h3>
+  <p class="tui-island__paragraph">{{activity.address}}</p>
+  <p class="tui-island__paragraph tui-island__paragraph_link">
+    <a
+      tuiButton
+      size="m"
+      (click)="subscribe()"
+      [showLoader]="isLoading$ | async"
+      [disabled]="isDisabled$ | async"
+    >
+      <ng-container *ngIf="!(isDisabled$ | async)">Записаться</ng-container>
+      <ng-container *ngIf="isDisabled$ | async">Вы записаны</ng-container>
+    </a>
+  </p>
