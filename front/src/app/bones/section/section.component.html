@@ -1,0 +1,134 @@
+<form [formGroup]="mode">
+  <div class="tui-container tui-space_top-5 tui-space_bottom-5">
+    <div class="tui-row">
+      <div tuiGroup [collapsed]="true" class="tui-col_6">
+        <tui-radio-block
+          contentAlign="right"
+          formControlName="mode"
+          item="smart"
+          size="l"
+        >
+          Умный подбор курса
+        </tui-radio-block>
+        <tui-radio-block
+          contentAlign="right"
+          formControlName="mode"
+          item="simple"
+          size="l"
+        >
+          Каталог всех курсов
+        </tui-radio-block>
+      </div>
+    </div>
+  </div>
+</form>
+<!--<form [formGroup]="filter">-->
+<!--  <div class="tui-container tui-space_top-5 tui-space_bottom-5">-->
+<!--    <div *ngIf="form.controls.mode.value === 'simple'" class="tui-row tui-space_top-5">-->
+<!--      <div class="tui-col_12">-->
+<!--        <tui-input-->
+<!--          formControlName="search"-->
+<!--          tuiHintContent="Начните ввод, и мы подскажем, что делать дальше"-->
+<!--        >-->
+<!--          Введите запрос-->
+<!--          <input-->
+<!--            tuiTextfield-->
+<!--            placeholder="Поиск по активностям"-->
+<!--          />-->
+<!--        </tui-input>-->
+<!--        <tui-error-->
+<!--          formControlName="search"-->
+<!--          [error]="[] | tuiFieldError | async"-->
+<!--        ></tui-error>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div *ngIf="form.controls.mode.value === 'simple'" class="tui-row tui-space_top-5">-->
+<!--      <div class="tui-col_2">-->
+<!--        <tui-select-->
+<!--          formControlName="filter"-->
+<!--          class="accounts-select"-->
+<!--          [tuiTextfieldSize]="'l'"-->
+<!--          [tuiTextfieldLabelOutside]="true"-->
+<!--        >-->
+<!--          Filter 1-->
+<!--          <tui-data-list-wrapper-->
+<!--            *tuiDataList-->
+<!--            [items]="options"-->
+<!--          ></tui-data-list-wrapper>-->
+<!--        </tui-select>-->
+<!--      </div>-->
+<!--      <div class="tui-col_2">-->
+<!--        <tui-select-->
+<!--          formControlName="filter"-->
+<!--          class="accounts-select"-->
+<!--          [tuiTextfieldSize]="'l'"-->
+<!--          [tuiTextfieldLabelOutside]="true"-->
+<!--        >-->
+<!--          Filter 1-->
+<!--          <tui-data-list-wrapper-->
+<!--            *tuiDataList-->
+<!--            [items]="options"-->
+<!--          ></tui-data-list-wrapper>-->
+<!--        </tui-select>-->
+<!--      </div>-->
+<!--      <div class="tui-col_2">-->
+<!--        <tui-select-->
+<!--          formControlName="filter"-->
+<!--          class="accounts-select"-->
+<!--          [tuiTextfieldSize]="'l'"-->
+<!--          [tuiTextfieldLabelOutside]="true"-->
+<!--        >-->
+<!--          Filter 1-->
+<!--          <tui-data-list-wrapper-->
+<!--            *tuiDataList-->
+<!--            [items]="options"-->
+<!--          ></tui-data-list-wrapper>-->
+<!--        </tui-select>-->
+<!--      </div>-->
+<!--      <div class="tui-col_2">-->
+<!--        <tui-select-->
+<!--          formControlName="filter"-->
+<!--          class="accounts-select"-->
+<!--          [tuiTextfieldSize]="'l'"-->
+<!--          [tuiTextfieldLabelOutside]="true"-->
+<!--        >-->
+<!--          Filter 1-->
+<!--          <tui-data-list-wrapper-->
+<!--            *tuiDataList-->
+<!--            [items]="options"-->
+<!--          ></tui-data-list-wrapper>-->
+<!--        </tui-select>-->
+<!--      </div>-->
+<!--      <div class="tui-col_2">-->
+<!--        <tui-select-->
+<!--          formControlName="filter"-->
+<!--          class="accounts-select"-->
+<!--          [tuiTextfieldSize]="'l'"-->
+<!--          [tuiTextfieldLabelOutside]="true"-->
+<!--        >-->
+<!--          Filter 1-->
+<!--          <tui-data-list-wrapper-->
+<!--            *tuiDataList-->
+<!--            [items]="options"-->
+<!--          ></tui-data-list-wrapper>-->
+<!--        </tui-select>-->
+<!--      </div>-->
+<!--      <div class="tui-col_2">-->
+<!--        <tui-select-->
+<!--          formControlName="filter"-->
+<!--          class="accounts-select"-->
+<!--          [tuiTextfieldSize]="'l'"-->
+<!--          [tuiTextfieldLabelOutside]="true"-->
+<!--        >-->
+<!--          Filter 1-->
+<!--          <tui-data-list-wrapper-->
+<!--            *tuiDataList-->
+<!--            [items]="options"-->
+<!--          ></tui-data-list-wrapper>-->
+<!--        </tui-select>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!---->
+<!--</form>-->
